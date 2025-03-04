@@ -1,0 +1,50 @@
+
+
+/* стилизуйте класс composition - класс для div, в котором будет расположена композиция (укажите размеры, тип позиционирования, фон) */
+
+.composition {
+ width: 600px;
+ height: 400px;
+ background-image: url(../img/1.jpg);
+ }
+
+/* стилизуйте общий класс для всех картинок планет и т.п. с указанием типа позиционирования */
+.space{
+position:relative;
+}
+
+/* стилизуйте "подклассы" - отдельные классы для каждой картинки с использованием свойств top, left, right, bottom, z-index */
+
+.space.asteroid{
+top:-10px;
+right:-400px;
+}
+.space.planetone{
+top:-40px;
+left:100px;
+z-index:2;
+}
+.space.planettwo{
+top:60px;
+left:-120px;
+z-index:3;
+}
+.space.planetthree{
+top:-35px;
+left:120px;
+z-index:5;
+}
+.space.spaceship{
+top:-220px;
+left:-110px;
+z-index:4;
+}
+.space.superman{
+bottom:15px;
+left:200px;
+}
+.space.ufo{
+top:-80px;
+left:-280px;
+z-index:6;
+}
